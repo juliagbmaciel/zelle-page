@@ -1,0 +1,32 @@
+.header-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.header-text{
+    padding: 50px 30px;
+}
+.title{
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+
+}
+.subtitle{
+    font-size: 20px;
+    font-weight: 500;
+    color: #A9A9A9;
+    line-height: 30px;
+
+}
+.header-img{
+    display: flex;
+    
+}
+.title span{
+    color: #D3FE57;
+}
