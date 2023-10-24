@@ -1,0 +1,68 @@
+.gap{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.home-title{
+    background: linear-gradient(90deg, #FFF 0%, #D3FE57 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;;
+    text-align: center;
+    font-size: 61px;
+    font-weight: 200;
+    max-width: 50rem;
+    margin: 0 auto;
+    line-height: 67px;
+}
+
+.home-main{
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+}
+
+
+.cards-entpr-container{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 22px;
+}
+
+.section-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.home-btn-account{
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 16px 85px;
+    border-radius: 60.81px;
+    cursor: pointer;
+    border: 0.5px solid #fff;
+    transition: all .5s;
+}
+
+.float-header{
+    background-color: aqua;
+    width: fit-content;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #FFF 0%, #D3FE57 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 57.937px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 63.731px;
+    
+}
+

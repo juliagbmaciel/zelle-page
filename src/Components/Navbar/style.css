@@ -53,8 +53,9 @@
     transition: all ease-in-out 500ms;      
 }
 
-.nav-account > p:first-of-type:hover, .nav-infos-ul li:hover{
+.nav-account > p:first-of-type:hover, .nav-infos-ul li:hover, .home-btn-account:hover{
     text-decoration-color: #D3FE57;
     color: #D3FE57;
     transform: translateY(-5px);
+    border-color: #D3FE57;
 }

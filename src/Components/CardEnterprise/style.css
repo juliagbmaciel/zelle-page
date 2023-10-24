@@ -1,0 +1,62 @@
+.card-entp-container{
+    transition: transform .9s ;
+    position: relative;
+    width: 347px;
+    height: 510.24px;
+    border-radius: 7.6px;
+    cursor: pointer;
+
+    &.img-one:hover, &.img-two:hover, &.img-third:hover{
+        transform: scale(1.05);
+        background-position: center;
+        background-size: 400px;
+    }
+}
+
+
+.img-one{
+    background-image: url('../../assets/img/card-entp-img1.png');
+}
+
+.img-two{
+    background-image: url('../../assets/img/card-entp-img2.png');
+}
+
+.img-third{
+    background-image: url('../../assets/img/card-entp-img3.png');
+}
+
+.card-entp-content{
+    background-color: #141414;
+    width: 101%;
+    height: 50%;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    border-radius: 0 0 7.6px 7.6px;
+    color: #fff;
+    font-weight: 300;
+    padding: 0 22px 22px 22px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ 
+}
+
+.card-entp-text h2{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    padding:  0  0 10px 0;
+}
+
+.card-entp-text p{
+    color: rgba(255, 255, 255, .8);
+    line-height: 21px;
+}
+
+.card-entp-btn{
+    color: #D3FE57;
+    text-transform: uppercase;
+}

@@ -1,0 +1,65 @@
+.float-center-cel {
+    width: fit-content;
+    margin: 10rem auto;
+    position: relative;
+}
+
+.images-float-sec {
+    /* background-color: aqua; */
+    position: absolute;
+    top: 100px;
+    display: flex;
+    left: -150px;
+    gap: 100px;
+}
+
+.float-sec {
+    position: relative;
+}
+
+
+.two {
+    position: absolute;
+    z-index: -1;
+    bottom: 15rem;
+
+}
+
+.four {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.five {
+    position: absolute;
+    top: -5rem;
+    z-index: -1;
+}
+
+.three {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.six {
+    position: absolute;
+    top: 12rem;
+    z-index: -1;
+}
+
+.part-one,
+.part-two {
+    position: relative;
+    height: 626.5px;
+}
+.image-float{
+    transition: transform 1s ease;
+
+    &.up {
+        transform: translateX(-10rem); 
+        /* transform: translateY(80px); */
+      }
+}

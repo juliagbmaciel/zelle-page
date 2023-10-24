@@ -1,23 +1,22 @@
 .top {
-    transition: transform 0.7s ease; 
+    transition: transform .2s ease; 
     position: absolute;
+    z-index: 1;
 
     &.class2 {
-      transform: translateY(70px); 
-     
+      transform: translateY(80px); 
     }
   }
 
 
 .card-container{
-    background-color: #414141;
-    max-width: 1059.32px;
+    background-color: #141414;
+    width: 1059.32px;
     height: 312.99px;
     display: flex;
     border-radius: 26px;
     margin: 0 auto;
     justify-content: space-around;
- 
     box-sizing: border-box;
 
 }
@@ -59,7 +58,7 @@
 
 .card-btn:hover{
     transform: translateY(-8px);
-    color: #D3FE57;
+   
 }
 
 .green{
@@ -68,4 +67,16 @@
 
 .fix{
     margin-left: -48px;
+}
+
+.fixCard{
+    margin-top: 60px;
+}
+
+.black{
+    color: black;
+}
+
+.black .card-subtitle, .black .card-btn{
+    font-weight: 500;
 }

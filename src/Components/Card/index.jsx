@@ -7,17 +7,6 @@ function Card({ props }) {
     const [scrollY, setScrollY] = useState(0);
     const [lastScrollY, setLastScrollY] = useState(0);
     
-    function handleColor(props){
-        if (props.color === 'green'){
-            return 'green'
-        }else{
-            return
-        }
-    }
-
-    function fixPosition(props){
-       return props.fixPosition ? 'fix' : ''
-    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,21 +20,21 @@ function Card({ props }) {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [scrollY]);
-    const pixelsPerClassChange = 1;
+
     const currentClass = scrollY > lastScrollY ? 'class2' : 'class1';
 
     return (
-        <div className={`card-container ${handleColor(props)}`}>
+        <div className={`card-container ${props.color == 'green' && 'green'}`}>
             <div className="card-img">
-                <div className={`top ${fixPosition(props)} ${currentClass}`}>
+                <div className={`top ${props.fixPosition && 'fix'} ${currentClass}`}>
                     <img src={props.imgTwo} alt="" />
                 </div>
-                <div className="down">
+                <div className={`down ${props.fixPosition && 'fixCard'}`}>
                     <img src={props.imgOne} alt="" />
                 </div>
 
             </div>
-            <div className="card-content">
+            <div className={`card-content ${props.fixPosition && 'black'}`}>
                 <div className="card-title">
                     <p>{props.title}</p>
                 </div>
