@@ -45,3 +45,14 @@ html{
 	background-color: black;
 	height: 500vh;
 }
+
+@media screen and (max-width: 1440px){
+	.nav-container{
+		width: 1134px;
+	}
+	.header-img img{
+		width: 20rem;
+		height: 20rem;
+		margin-left: -5rem;
+	}
+}

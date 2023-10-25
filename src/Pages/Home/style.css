@@ -21,7 +21,7 @@
 .home-main{
     display: flex;
     flex-direction: column;
-    gap: 300px;
+    gap: 200px;
 }
 
 
@@ -50,8 +50,7 @@
     transition: all .5s;
 }
 
-.float-header{
-    background-color: aqua;
+.float-header, .last-session-header{
     width: fit-content;
     margin: 0 auto;
     background: linear-gradient(90deg, #FFF 0%, #D3FE57 100%);

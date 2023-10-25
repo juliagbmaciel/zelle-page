@@ -1,4 +1,4 @@
-import { Navbar, Header, Card, CardEnterprise, SectionFloat } from '../../Components'
+import { Navbar, Header, Card, CardEnterprise, SectionFloat, LastSession, Footer } from '../../Components'
 import cardCell from '../../assets/img/card-cell.png'
 import cardComponent from '../../assets/img/cell-component.png'
 import zelleTag from '../../assets/img/zelle-tag.png'
@@ -6,6 +6,7 @@ import cardTag from '../../assets/img/card-tag.png'
 import zelleInvest from '../../assets/img/zelleInvest.png'
 import './style.css'
 import React from 'react'
+
 
 export default function Home() {
     return (
@@ -50,10 +51,16 @@ export default function Home() {
                         <h1>Invista no Brasil e lá fora <br /> pelo mesmo app da sua conta</h1>
                     </div>
                     <SectionFloat/>
-
                 </section>
+                <section className="last-session">
+                    <div className="last-session-header">
+                        <h1>Gostou? Baixe o <br/> nosso APP! </h1>
+                    </div>
+                    <LastSession/>
+                </section>
+                
 
-
+            <Footer/>
             </main>
 
 

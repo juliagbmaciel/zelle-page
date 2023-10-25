@@ -1,0 +1,48 @@
+.last-session-container{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 10rem auto 0 auto;
+    gap: 3rem;
+}
+
+.last-session-row h2{
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.last-session-row{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.last-session-row p{
+    color: rgba(255, 255, 255, .6);
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.last-session-texts{
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 71px;
+    line-height: 2.5rem;
+}
+
+.last-session-btn{
+    padding: 10px 39px;
+    cursor: pointer;
+    border-radius: 7px;
+    background-color: #D3FE57;
+    color: black;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    max-width: fit-content;
+    font-size: 18px;
+    transition: all 500ms;
+}

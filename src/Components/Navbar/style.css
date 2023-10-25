@@ -1,15 +1,42 @@
 .nav-container{
-    background-color: black;
-    max-width: 1440px;
-    margin: 0 auto;
+    width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: 300;
     font-size: 20px;
     color: #fff;
-    padding: 40px 28px;
+    padding: 20px 28px;
     box-sizing: border-box;
+    position: fixed;
+    z-index: 5;
+    background-color: #000;
+    transition: all .5s;
+
+    
+    &.border::after{
+       content: ' ';
+       display: block;
+       background-color: #D3FE57;
+       position: fixed;
+       top: 6.5rem;
+       left: 0;
+       width: 100vw;
+       height: 1px;
+    }
+
+}
+
+
+
+.nav-max-container{
+    width: 100%;
+    background-color: rgb(218, 62, 62) ;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+    height: fit-content;
 }
 
 .nav-infos-ul{
@@ -40,7 +67,7 @@
     transition: all 500ms;
 }
 
-.nav-btn-login:hover{
+.nav-btn-login:hover, .last-session-btn:hover{
     transform: translateY(-5px);
 }
 

@@ -14,8 +14,12 @@ export default function SectionFloat() {
     
     useEffect(() => {
         const handleScroll = () => {
-            setLastScrollY(scrollY);
-            setScrollY(window.scrollY);
+            if(window.scrollY > 2487){
+                setLastScrollY(scrollY);
+                console.log('scroll anterior: ', scrollY)
+                setScrollY(window.scrollY);
+            }
+
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -36,21 +40,21 @@ export default function SectionFloat() {
                         <div className={`image-float one ${currentClass}`}>
                             <img src={image1} alt="" />
                         </div>
-                        <div className="image-float two">
+                        <div className={`image-float two ${currentClass}`}>
                             <img src={image2} alt="" />
                         </div>
-                        <div className="image-float four">
+                        <div className={`image-float four ${currentClass}`}>
                             <img src={image4} alt="" />
                         </div>
                     </div>
                     <div className='part-two'>
-                        <div className="image-float five">
+                        <div className={`image-float five ${currentClass}`}>
                             <img src={image5} alt="" />
                         </div>
-                        <div className="image-float six">
+                        <div className={`image-float six ${currentClass}`}>
                             <img src={image} alt="" />
                         </div>
-                        <div className="image-float three">
+                        <div className={`image-float three ${currentClass}`}>
                             <img src={image3} alt="" />
                         </div>
                     </div>

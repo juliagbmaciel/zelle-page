@@ -3,6 +3,8 @@ import Header from "./Header"
 import Card from "./Card";
 import CardEnterprise from "./CardEnterprise"
 import SectionFloat from "./SectionFloat";
+import LastSession from "./LastSession";
+import Footer from "./Footer";
 
 
 export {
@@ -10,5 +12,7 @@ export {
     Header,
     Card,
     CardEnterprise,
-    SectionFloat
+    SectionFloat,
+    LastSession, 
+    Footer
 }

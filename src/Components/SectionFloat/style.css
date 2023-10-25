@@ -1,6 +1,6 @@
-.float-center-cel {
+ .float-center-cel {
     width: fit-content;
-    margin: 10rem auto;
+    margin: 10rem auto 0 auto;
     position: relative;
 }
 
@@ -17,24 +17,50 @@
     position: relative;
 }
 
+.one{
+    margin-left: 2rem;
+    transition: transform 1s ease;
 
+    &.up {
+        transform: translate3d(-7rem, -4rem, 10px);
+       
+      }
+}
 .two {
     position: absolute;
     z-index: -1;
     bottom: 15rem;
+    left: 3rem;
 
+    transition: transform 1s ease;
+
+    &.up {
+        transform: translate3d(-10rem, -2rem, 10px);
+      }
 }
 
 .four {
     position: absolute;
     bottom: 0;
     z-index: -1;
+
+    transition: transform 1s ease;
+
+    &.up {
+        transform: translate3d(-5rem, -2rem, 10px);
+      }
 }
 
 .five {
     position: absolute;
     top: -5rem;
     z-index: -1;
+
+    transition: transform 1s ease;
+
+    &.up {
+        transform: translate3d(10rem, -2rem, 10px);
+      }
 }
 
 .three {
@@ -42,12 +68,24 @@
     bottom: 0;
     z-index: -1;
 
+    transition: transform 1s ease;
+
+    &.up {
+        transform: translate3d(5rem, -2rem, 10px);
+      }
+
 }
 
 .six {
     position: absolute;
     top: 12rem;
     z-index: -1;
+
+    transition: transform 1s ease;
+
+    &.up {
+        transform: translate3d(11rem, -1rem, 10px)
+      }
 }
 
 .part-one,
@@ -55,11 +93,5 @@
     position: relative;
     height: 626.5px;
 }
-.image-float{
-    transition: transform 1s ease;
 
-    &.up {
-        transform: translateX(-10rem); 
-        /* transform: translateY(80px); */
-      }
-}
+      
