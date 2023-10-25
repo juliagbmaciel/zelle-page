@@ -12,14 +12,14 @@
     z-index: 5;
     background-color: #000;
     transition: all .5s;
+   
 
-    
     &.border::after{
        content: ' ';
        display: block;
        background-color: #D3FE57;
        position: fixed;
-       top: 6.5rem;
+       top: 6.2rem;
        left: 0;
        width: 100vw;
        height: 1px;
@@ -28,7 +28,16 @@
 }
 
 
-
+.responsive-menu{
+    width: 100vw;
+    height: 4rem;
+    background-color: #000000;
+    position: fixed;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    display: none;
+}
 .nav-max-container{
     width: 100%;
     background-color: rgb(218, 62, 62) ;
@@ -85,4 +94,41 @@
     color: #D3FE57;
     transform: translateY(-5px);
     border-color: #D3FE57;
+}
+
+.btn-menu{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 3rem;
+
+}
+
+.btn-menu.active .line:nth-child(1){
+    transform:  translateY(6px) rotate(-45deg);
+}
+
+.btn-menu.active .line:nth-child(2){
+    width: 0;
+}
+
+.btn-menu.active .line:nth-child(3){
+    transform:  translateY(-8px) rotate(45deg);
+}
+
+.line{
+    width: 26px;
+    height: 2px;
+    background-color: #D3FE57;
+    display: block;
+
+    transform-origin: center;
+    transition: 0.2s;
 }

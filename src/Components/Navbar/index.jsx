@@ -5,6 +5,7 @@ import './style.css'
 function Navbar() {
 
     const [scrollY, setScrollY] = useState(0)
+    const [close, setClose] = useState(false)
 
     useEffect(() =>{
         const teste = () => {
@@ -38,6 +39,13 @@ function Navbar() {
                 <div className="nav-btn-login">
                     <p>Login</p>
                 </div>
+            </div>
+        </div>
+        <div className="responsive-menu">
+            <div className={`btn-menu ${close ? 'active': ''}`} onClick={() => setClose(!close)}>
+                <span className="line"></span>
+                <span className="line"></span>
+                <span className="line"></span>
             </div>
         </div>
         </div>

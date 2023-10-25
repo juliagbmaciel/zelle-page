@@ -56,3 +56,87 @@ html{
 		margin-left: -5rem;
 	}
 }
+
+@media screen and (max-width: 1100px){
+	.nav-container{
+		display: none;
+	}
+	.card-container{
+		width: 49rem
+	}
+	.down img{
+		margin-left: -41px;
+	}
+	.top{
+		left: 3rem;
+	}
+	.card-content{
+		width: 426px;
+	}
+	.fix img{
+		width: 20rem;
+	}
+	.responsive-menu{
+		display: flex;
+	}
+	.card-entp-container{
+		width: 256px;
+	}
+	.float-center-cel img{
+		width: 20rem;
+	}
+	.image-float img{
+		width: 15rem;
+	}
+
+}
+
+@media screen and (max-width: 1000px){
+	.footer-container{
+		flex-wrap: wrap;
+		width: 35rem;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	
+}
+
+@media screen and (max-width: 800px){
+	.footer-container{
+		flex-wrap: wrap;
+		width: 35rem;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	.title{
+		font-size: 38px;
+	}
+	.card-container{
+		width: 24rem;
+		flex-direction: column-reverse;
+		padding: 2rem;
+	}
+	
+	.card-subtitle, .card-btn{
+		display: none;
+	}
+	.down img{
+		width: 10rem;
+	}
+	.top img{
+		width: 12rem;
+	}
+	.fixCard{
+		margin-top: -0.7rem;
+	}
+	.card-title{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.fix{
+		margin-left: 2px;
+}
+	}
+	
