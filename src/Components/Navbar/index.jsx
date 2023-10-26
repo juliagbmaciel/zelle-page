@@ -42,11 +42,18 @@ function Navbar() {
             </div>
         </div>
         <div className="responsive-menu">
+            <img src={navLogo} alt="" />
+            <div className='nav-infos-responsive'>
+            <div className="nav-btn-login">
+                    <p>Login</p>
+                </div>
             <div className={`btn-menu ${close ? 'active': ''}`} onClick={() => setClose(!close)}>
                 <span className="line"></span>
                 <span className="line"></span>
                 <span className="line"></span>
             </div>
+            </div>
+
         </div>
         </div>
 

@@ -1,4 +1,4 @@
-import { Navbar, Header, Card, CardEnterprise, SectionFloat, LastSession, Footer } from '../../Components'
+import { Navbar, Header, Card, CardEnterprise, SectionFloat, LastSession, Footer } from '../../components'
 import cardCell from '../../assets/img/card-cell.png'
 import cardComponent from '../../assets/img/cell-component.png'
 import zelleTag from '../../assets/img/zelle-tag.png'
