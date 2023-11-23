@@ -16,7 +16,6 @@ export default function SectionFloat() {
         const handleScroll = () => {
             if(window.scrollY > 2487){
                 setLastScrollY(scrollY);
-                console.log('scroll anterior: ', scrollY)
                 setScrollY(window.scrollY);
             }
 

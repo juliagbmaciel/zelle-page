@@ -14,7 +14,6 @@ function Navbar() {
             }else{
                 setScrollY(0)
             }
-            console.log(window.scrollY)
         }
 
         window.addEventListener('scroll', teste);
