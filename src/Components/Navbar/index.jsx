@@ -52,7 +52,14 @@ function Navbar() {
                 <span className="line"></span>
             </div>
             </div>
-
+        </div>
+        <div className={`menu-column-responsive ${!close ? 'inactive': ''}`} >
+        <ul className='ul-responsive'>
+                    <li className='li-responsive'>Sobre nós</li>
+                    <li className='li-responsive'>Serviços</li>
+                    <li className='li-responsive'>Contato</li>
+                    <li className='li-responsive'>Criar conta</li>
+                </ul>
         </div>
         </div>
 
