@@ -1,0 +1,144 @@
+.container-credentials{
+    height: 100vh;
+    background-color: transparent;
+    position: fixed;
+    width: 99vw;
+}
+
+.form-container{
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    z-index: 1;
+} 
+
+.form-box{
+    width: 45rem;
+    height: 34rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.form-box img{
+    width: 100px;
+}
+
+.aba-column p{
+    color: #777;
+    cursor: pointer;
+
+}
+
+.aba-column{
+    width: 50%;
+    text-align: center;
+}
+
+
+.form-content-aba{
+    display: flex;
+    /* gap: 5rem; */
+    border-bottom: 1px solid #A5A5A5;
+    padding-bottom: 10px;
+    width: 100%;
+    justify-content: space-around;
+    margin: 2rem auto;
+}
+
+.form-content{
+    width: 80%;
+}
+
+.custom-input{
+    width: 100%;
+    /* background-color: aqua; */
+    border-radius: 7px;
+    border-bottom: 1px solid #FFF;
+    height: 40px;
+    display: flex;
+    padding: 2px 10px;
+    box-sizing: border-box;
+}
+
+
+.custom-input input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-family: 'Poppins';
+    caret-color: #FFF;
+    color: #fff;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.form-content-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.form-input{
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem ;
+}
+.clicked{
+    position: relative;
+}
+.clicked p{
+    color: #fff;
+    font-weight: 600;
+}
+
+.clicked::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    bottom: -10px;
+}
+
+
+.btn-confirm{
+    width: 100%;
+    padding: 10px;
+    background-color: #D3FE57;
+    border: none;
+    border-radius: 4px;
+    margin-top: 3rem;
+    cursor: pointer;
+
+
+}
+
+.btn-confirm p {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+@keyframes floating {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-20px); 
+    }
+  }
+
+.form-container img{
+    animation: floating 5s infinite;
+}

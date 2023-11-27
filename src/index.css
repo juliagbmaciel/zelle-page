@@ -131,7 +131,7 @@ table {
 html {
 	font-family: 'Poppins';
 	background-color: black;
-	height: 500vh;
+	/* height: 500vh; */
 }
 
 @media screen and (max-width: 1440px) {
