@@ -3,6 +3,8 @@ import { Particle } from "../../components";
 import logo from '../../assets/img/big-logo.png'
 import { useState } from "react";
 import { getToken } from "../../services/api/api";
+import { setSigned, setToken } from "../../services/reducers/actions";
+import { useDispatch } from "react-redux";
 
 
 export default function CreateAccount() {
@@ -10,10 +12,13 @@ export default function CreateAccount() {
     const [cpf, setCpf] = useState('')
     const [password, setPassword ] = useState('')
 
+    const dispatch = useDispatch()
+
     const login = async () => {
         try{
             const response = await getToken(cpf, password)
-            console.log(response)
+            dispatch(setToken(response.auth_token))
+            dispatch(setSigned(true))
         }catch(error){
             console.log(error)
         }

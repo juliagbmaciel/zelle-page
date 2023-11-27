@@ -14,3 +14,20 @@ export async function getToken(cpf, password) {
       throw error;
     }
   }
+
+export async function getAccount(token) {
+
+    try {
+      const response = await axiosInstance.get('client-all',
+        {
+          headers: {
+            'Authorization': `Token ${token}`
+          }
+        }
+      )
+      return response.data
+    } catch (error) {
+      console.log("Deu erro")
+      throw error
+    }
+  }
