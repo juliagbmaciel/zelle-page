@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import navLogo from '../../assets/img/nav-logo.png'
+import { Link } from 'react-router-dom'
 import './style.css'
 
 function Navbar() {
 
     const [scrollY, setScrollY] = useState(0)
     const [close, setClose] = useState(false)
+
 
     useEffect(() =>{
         const teste = () => {
@@ -22,7 +24,7 @@ function Navbar() {
 
     return (
         <div className="nav-max-container">
-        <div className={`nav-container ${scrollY > 130 ? 'border' : ''}`}>
+        <div className={`nav-container ${scrollY > 130 ? 'border' : ''}`} >
             <div className="nav-logo">
                 <img src={navLogo} alt="" />
             </div>
@@ -33,19 +35,24 @@ function Navbar() {
                     <li className='nav-infos-ul-li'>Contato</li>
                 </ul>
             </div>
-            <div className="nav-account">
+            <div className="nav-account"  >
                 <p>Criar conta</p>
-                <div className="nav-btn-login">
+                <Link to={'/login'}>
+                <div className="nav-btn-login" >
                     <p>Login</p>
                 </div>
+                </Link>
             </div>
         </div>
         <div className="responsive-menu">
             <img src={navLogo} alt="" />
             <div className='nav-infos-responsive'>
-            <div className="nav-btn-login">
+                <Link to={'/login'}>
+                <div className="nav-btn-login" >
                     <p>Login</p>
                 </div>
+                </Link>
+            
             <div className={`btn-menu ${close ? 'active': ''}`} onClick={() => setClose(!close)}>
                 <span className="line"></span>
                 <span className="line"></span>
