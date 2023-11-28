@@ -5,22 +5,46 @@ import { useState } from "react";
 import { getToken } from "../../services/api/api";
 import { setSigned, setToken } from "../../services/reducers/actions";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2'
+
 
 
 export default function CreateAccount() {
     const [abaClicked, setAbaClicked] = useState('Login')
     const [cpf, setCpf] = useState('')
-    const [password, setPassword ] = useState('')
+    const [password, setPassword] = useState('')
+
+    const navigate = useNavigate();
 
     const dispatch = useDispatch()
 
     const login = async () => {
-        try{
+        try {
+
+            if (cpf.length == 0 || password.length == 0) {
+
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Campos não podem ser vazios",
+                });
+                return
+            }
             const response = await getToken(cpf, password)
             dispatch(setToken(response.auth_token))
             dispatch(setSigned(true))
-        }catch(error){
-            console.log(error)
+            navigate('/home');
+        } catch (error) {
+
+            const errorNew = error.response.data.non_field_errors[0]
+            console.log('errpo', errorNew)
+
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: errorNew,
+            });
         }
     }
 
@@ -45,13 +69,13 @@ export default function CreateAccount() {
                             <div className="form-input">
                                 <p>CPF/CNPJ</p>
                                 <div className="custom-input">
-                                    <input type="text" id="cpf" placeholder="Digite o seu CPF ou CNPJ" onChange={(e) => setCpf(e.target.value)}/>
+                                    <input type="text" id="cpf" placeholder="Digite o seu CPF ou CNPJ" onChange={(e) => setCpf(e.target.value)} />
                                 </div>
                             </div>
                             <div className="form-input">
                                 <p>Senha</p>
                                 <div className="custom-input">
-                                    <input type="password" id="password" placeholder="Digite a sua senha" onChange={(e) => setPassword(e.target.value)}/>
+                                    <input type="password" id="password" placeholder="Digite a sua senha" onChange={(e) => setPassword(e.target.value)} />
                                 </div>
                             </div>
                         </div>
