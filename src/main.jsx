@@ -8,15 +8,16 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { Store } from '../src/services/reducers/store.jsx'
 import './index.css'
+import {ProtectedRoute, RouteLogin} from './services/routerValidator/ProtectedRoute.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={Store}>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<CreateAccount />} />
+          <Route path="/login" element={<RouteLogin element={CreateAccount}/>}/>
           <Route path="/" element={<Home />} />
-          <Route path="home" element={<LoggedHome />} />
+          <Route path="/home" element={<ProtectedRoute element={LoggedHome}/>} />
         </Routes>
       </BrowserRouter>
     </Provider>
