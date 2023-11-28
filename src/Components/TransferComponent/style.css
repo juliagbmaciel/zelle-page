@@ -1,0 +1,33 @@
+.transfer-container{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 90px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+}
+
+.h1-title{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.transfer-component{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.transfer-container p {
+    color: #ccc;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.transfer-block{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
